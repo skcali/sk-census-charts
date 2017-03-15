@@ -1,28 +1,33 @@
 {
-    "name": "census-charts",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "angular": "^1.6.3",
-        "bootstrap": "^3.3.7",
-        "angular-chart.js": "^1.1.1",
-        "font-awesome": "^4.7.0"
+  "name": "budget_tracker",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sean Cali <seankenjicali@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/skcali/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "font-awesome": {
+      "main": "css/font-awesome.css"
     },
-    "overrides": {
-        "font-awesome": {
-            "main": "css/font-awesome.css"
-        },
-        "bootstrap": {
-            "main": [
-                "dist/css/bootstrap.css",
-                "dist/js/bootstrap.js"
-            ]
-        }
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
     }
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "angular-chart.js": "^1.1.1"
+  }
 }

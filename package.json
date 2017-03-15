@@ -1,11 +1,31 @@
 {
-    "name": "census-charts",
-    "version": "0.1.0",
-    "dependencies": {},
-    "devDependencies": {
-        "browser-sync": "^2.18.8",
-        "gulp": "^3.9.1",
-        "gulp-inject": "^4.2.0",
-        "wiredep": "^4.0.0"
-    }
+  "name": "budget_tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skcali/"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skcali/"
+  },
+  "homepage": "https://github.com/skcali/",
+  "description": "",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
 }
