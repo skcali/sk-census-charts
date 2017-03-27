@@ -18,35 +18,10 @@
             <p class='lead'>See census data from 2007-2015</p>
 
         </div>
-        {{chartsCtrl.chart}}
-        {{chartsCtrl.check}}
-
         <div class="row">
-            <div class="col-md-4">
-                <h1>Big Mac Index</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chart.data" chart-labels="chartsCtrl.chart.labels"></canvas>
-            </div>
-            <div class="col-md-4">
-                <h1>Birth Rate</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chart.data" chart-labels="chartsCtrl.chart.labels"></canvas>
-            </div>
-            <div class="col-md-4">
-                <h1>CO2 Emmissions</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chartValues.data" chart-labels="chartsCtrl.chartValues.labels"></canvas>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h1>Death Rate</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chartValues.data" chart-labels="chartsCtrl.chartValues.labels"></canvas>
-            </div>
-            <div class="col-md-4">
-                <h1>Corruption Index</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chartValues.data" chart-labels="chartsCtrl.chartValues.labels"></canvas>
-            </div>
-            <div class="col-md-4">
-                <h1>Population Density</h1>
-                <canvas id="line" class="chart chart-line" chart-data="chartsCtrl.chartValues.data" chart-labels="chartsCtrl.chartValues.labels"></canvas>
+            <div class="col-md-4" ng-repeat="chart in chartsCtrl.charts">
+              <h2>{{chart.name}}</h2>
+              <canvas id="line" class="chart chart-line" chart-data="chart.data" chart-labels="chart.labels"></canvas>
             </div>
         </div>
     </div>
